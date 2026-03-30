@@ -1,0 +1,322 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>Security Policy for User Manager for Jira</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+h1 strong,
+h2 strong,
+h3 strong {
+	font-weight: 600;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 10px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	text-indent: -1.7em;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 0.25em;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > p {
+	margin: 0;
+}
+
+.equation-container {
+	display: flex;
+	justify-content: center;
+}
+
+.equation-container > svg {
+	max-width: 100%;
+}
+
+.equation-container > svg * {
+	fill: currentColor;
+	stroke: currentColor;
+}
+
+.callout {
+	display: flex;
+	align-items: flex-start;
+	gap: 0.75rem;
+	border: 1px solid rgba(55, 53, 47, 0.16);
+	background: rgba(243, 244, 246, 0.7);
+}
+
+.callout-icon {
+	font-size: 1.2rem;
+	line-height: 1;
+}
+
+.callout-content {
+	flex: 1;
+}
+</style></head><body><article id="security-policy-user-manager-for-jira" class="page sans"><header><h1 class="page-title" dir="auto">Security Policy for User Manager for Jira</h1><p class="page-description" dir="auto"></p></header><div class="page-body"><div style="display:contents" dir="auto"><p class="">Last updated: March 31, 2026</p></div><div style="display:contents" dir="auto"><p class="">This Security Policy describes the baseline security practices that D&amp;L applies to User Manager for Jira (the "App") for Jira Cloud.</p></div><div style="display:contents" dir="auto"><p class="">The App is built on Atlassian Forge and is intended for business use by Jira Cloud customers.</p></div><div style="display:contents" dir="auto"><div class="callout"><div class="callout-icon">i</div><div class="callout-content">This document is informational and reflects the current implementation of the App. It does not create a contractual security commitment beyond applicable law, the Atlassian Marketplace Partner Agreement, or any written agreement expressly entered into with a customer.</div></div></div><div style="display:contents" dir="auto"><ol type="1" class="numbered-list" start="1"><li>Security principles</li></ol></div><div style="display:contents" dir="auto"><p class="">We design and operate the App with the following principles in mind:</p></div><div style="display:contents" dir="auto"><ul class="bulleted-list"><li style="list-style-type:disc">least privilege access to Jira and App data</li></ul></div><div style="display:contents" dir="auto"><ul class="bulleted-list"><li style="list-style-type:disc">use of Atlassian-hosted infrastructure wherever practical</li></ul></div><div style="display:contents" dir="auto"><ul class="bulleted-list"><li style="list-style-type:disc">limiting persistent storage to configuration and operationally necessary data</li></ul></div><div style="display:contents" dir="auto"><ul class="bulleted-list"><li style="list-style-type:disc">controlled access to support and maintenance activities</li></ul></div><div style="display:contents" dir="auto"><ul class="bulleted-list"><li style="list-style-type:disc">reasonable safeguards for confidentiality, integrity, and availability</li></ul></div><div style="display:contents" dir="auto"><ol type="1" class="numbered-list" start="2"><li>Platform and hosting model</li></ol></div><div style="display:contents" dir="auto"><p class="">The App runs on Atlassian Forge and uses Atlassian-hosted compute and Atlassian-hosted storage for App data.</p></div><div style="display:contents" dir="auto"><p class="">Based on the current implementation, the App does not use a separate vendor-operated backend to store in-scope End-User Data outside of Atlassian apps and services. Network requests made by the App are limited to Jira Cloud and Atlassian APIs required for App functionality.</p></div><div style="display:contents" dir="auto"><ol type="1" class="numbered-list" start="3"><li>Authentication and authorization</li></ol></div><div style="display:contents" dir="auto"><p class="">The App relies on Atlassian Forge authentication and the permissions granted during App installation.</p></div><div style="display:contents" dir="auto"><p class="">Access to the App dashboard can also be restricted through App configuration so that only Jira administrators and customer-selected users or groups can open the dashboard.</p></div><div style="display:contents" dir="auto"><p class="">Within our organization, access to App source code, configuration, and operational tooling is intended to be limited to personnel who require that access for development, maintenance, support, or security purposes.</p></div><div style="display:contents" dir="auto"><ol type="1" class="numbered-list" start="4"><li>Data handling and minimization</li></ol></div><div style="display:contents" dir="auto"><p class="">The App is designed to process Jira user, group, project, and activity data only to provide its dashboard and related user insight features.</p></div><div style="display:contents" dir="auto"><p class="">Persistent App storage is intended to be limited to:</p></div><div style="display:contents" dir="auto"><ul class="bulleted-list"><li style="list-style-type:disc">App configuration and access settings</li></ul></div><div style="display:contents" dir="auto"><ul class="bulleted-list"><li style="list-style-type:disc">an optional customer-provided Atlassian Admin API key, if configured by a customer administrator</li></ul></div><div style="display:contents" dir="auto"><ul class="bulleted-list"><li style="list-style-type:disc">short-lived cached operational data used to improve App performance</li></ul></div><div style="display:contents" dir="auto"><p class="">We aim to avoid storing more data than is reasonably necessary for the App to function.</p></div><div style="display:contents" dir="auto"><ol type="1" class="numbered-list" start="5"><li>Encryption and transport security</li></ol></div><div style="display:contents" dir="auto"><p class="">The App depends on Atlassian cloud platform controls for secure transport and hosted service protections. Communications with Jira Cloud, Atlassian APIs, and Forge services are expected to occur over HTTPS.</p></div><div style="display:contents" dir="auto"><p class="">Where customer-provided secrets are stored by the App, they are stored through Atlassian Forge hosted storage rather than in a separate vendor-managed database.</p></div><div style="display:contents" dir="auto"><ol type="1" class="numbered-list" start="6"><li>Secrets and credentials</li></ol></div><div style="display:contents" dir="auto"><p class="">The App does not require end users to provide Jira account passwords or Atlassian Personal Access Tokens for normal operation.</p></div><div style="display:contents" dir="auto"><p class="">A customer administrator may optionally configure an Atlassian Admin API key to enable additional profile enrichment features. If configured, the key is stored in Atlassian Forge storage and should be managed by the customer in accordance with its internal security policies.</p></div><div style="display:contents" dir="auto"><p class="">Customers are responsible for rotating, replacing, or removing optional secrets they configure in the App when appropriate.</p></div><div style="display:contents" dir="auto"><ol type="1" class="numbered-list" start="7"><li>Logging, monitoring, and troubleshooting</li></ol></div><div style="display:contents" dir="auto"><p class="">The App may generate operational logs and warnings to support debugging, maintenance, and error handling. We aim to keep logs limited to what is reasonably necessary for support and security purposes.</p></div><div style="display:contents" dir="auto"><p class="">Where feasible, we seek to avoid unnecessary exposure of End-User Data in logs. Customers should understand that diagnostic records on hosted platforms can still contain limited technical metadata associated with App operations.</p></div><div style="display:contents" dir="auto"><ol type="1" class="numbered-list" start="8"><li>Vulnerability management</li></ol></div><div style="display:contents" dir="auto"><p class="">We aim to address security issues in a risk-based manner and to remediate verified vulnerabilities within a reasonable timeframe, taking into account severity, exploitability, and platform constraints.</p></div><div style="display:contents" dir="auto"><p class="">When relevant, we review Atlassian Marketplace security requirements, Atlassian platform updates, dependency advisories, and issue reports received through our support or security contact channels.</p></div><div style="display:contents" dir="auto"><ol type="1" class="numbered-list" start="9"><li>Incident response</li></ol></div><div style="display:contents" dir="auto"><p class="">If we become aware of a confirmed security incident affecting the App, we will assess the scope, impact, and required remediation steps. Where notification is required by applicable law, contract, or Atlassian platform obligations, we will provide notice within a reasonable time after verification.</p></div><div style="display:contents" dir="auto"><p class="">Our response may include investigation, containment, corrective changes, credential rotation guidance, and additional customer communication where appropriate.</p></div><div style="display:contents" dir="auto"><ol type="1" class="numbered-list" start="10"><li>Customer responsibilities</li></ol></div><div style="display:contents" dir="auto"><p class="">Customers remain responsible for their Jira administration and internal security decisions, including:</p></div><div style="display:contents" dir="auto"><ul class="bulleted-list"><li style="list-style-type:disc">deciding whether to install and enable the App</li></ul></div><div style="display:contents" dir="auto"><ul class="bulleted-list"><li style="list-style-type:disc">configuring which users or groups may access the App</li></ul></div><div style="display:contents" dir="auto"><ul class="bulleted-list"><li style="list-style-type:disc">managing any optional Atlassian Admin API key provided to the App</li></ul></div><div style="display:contents" dir="auto"><ul class="bulleted-list"><li style="list-style-type:disc">reviewing whether the App is appropriate for their compliance and governance requirements</li></ul></div><div style="display:contents" dir="auto"><ol type="1" class="numbered-list" start="11"><li>Responsible disclosure and contact</li></ol></div><div style="display:contents" dir="auto"><p class="">To report a suspected security issue, vulnerability, or abuse concern related to the App, contact:</p></div><div style="display:contents" dir="auto"><ul class="bulleted-list"><li style="list-style-type:disc">Security contact: <a href="mailto:dario3c0@gmail.com">dario3c0@gmail.com</a></li></ul></div><div style="display:contents" dir="auto"><p class="">Please include enough detail to reproduce or assess the issue, such as the affected feature, a description of impact, steps to reproduce, and any relevant timestamps or screenshots.</p></div><div style="display:contents" dir="auto"><p class="">We request that reporters act in good faith, avoid privacy violations or service disruption, and do not publicly disclose a suspected vulnerability before we have had a reasonable opportunity to investigate and address it.</p></div><div style="display:contents" dir="auto"><ol type="1" class="numbered-list" start="12"><li>Changes to this policy</li></ol></div><div style="display:contents" dir="auto"><p class="">We may update this Security Policy from time to time to reflect changes in the App, our practices, legal requirements, or Atlassian platform capabilities. If we make a material update, we will revise the "Last updated" date above.</p></div><div style="display:contents" dir="auto"><ol type="1" class="numbered-list" start="13"><li>Contact information</li></ol></div><div style="display:contents" dir="auto"><p class="">D&amp;L<br/>Security contact: <a href="mailto:dario3c0@gmail.com">dario3c0@gmail.com</a><br/>General support: <a href="mailto:dario3c0@gmail.com">dario3c0@gmail.com</a></p></div><div style="display:contents" dir="auto"><p class="">
+</p></div></div></article><span class="sans" style="font-size:14px;padding-top:2em"></span></body></html>
